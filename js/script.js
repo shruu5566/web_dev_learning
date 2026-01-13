@@ -1,12 +1,14 @@
-function showName() {
-  let name = document.getElementById("nameInput").value;
+document.getElementById("btn").addEventListener("click", function () {
+  const nameInput = document.getElementById("nameInput");
+  const output = document.getElementById("output");
 
-  if (name === "") {
-    document.getElementById("output").innerText =
-      "Please enter your name 🙂";
+  if (nameInput.value.trim() === "") {
+    output.style.color = "red";
+    output.innerText = "Please enter your name 🙂";
   } else {
-    document.getElementById("output").innerText =
-      "Hello " + name + "! Welcome to Day 3 🎉";
+    output.style.color = "green";
+    output.innerText =
+      "Hello " + nameInput.value + "! Welcome to Day 3 🎉";
+    nameInput.value = "";
   }
-}
-
+});
