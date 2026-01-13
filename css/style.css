@@ -47,7 +47,6 @@ button:hover {
 .heading {
   animation: fadeSlide 2s ease-in-out;
 }
-
 /* Animation keyframes */
 @keyframes fadeSlide {
   from {
