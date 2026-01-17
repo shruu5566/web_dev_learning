@@ -12,9 +12,14 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+label{
+  font-size: 14px;
+}
+
 input {
   width: 100%;
   padding: 8px;
+  margin-top:4px;
 }
 
 button {
@@ -25,4 +30,8 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+button:hover{
+  background-color: #4338ca;
 }
